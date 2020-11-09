@@ -22,7 +22,15 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 * How to read and use Flutter Documentation
 
 
+## What is the difference between hot reload, hot restart, and full restart?
+* **Hot reload** loads code changes into the VM and re-builds the widget tree, preserving the app state; it doesn’t rerun main() or initState().
+  (⌘\ in Intellij and Android Studio, ⌃F5 in VSCode)
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+* **Hot restart** loads code changes into the VM, and restarts the Flutter app, losing the app state.
+  (⇧⌘\ in IntelliJ and Android Studio, ⇧⌘F5 in VSCode)
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+* **Full restart** restarts the iOS, Android, or web app. This takes longer because it also recompiles the Java / Kotlin / ObjC / Swift code.
+  There is no specific keyboard shortcut for this; you need to stop and start the run configuration.
+
+
+
